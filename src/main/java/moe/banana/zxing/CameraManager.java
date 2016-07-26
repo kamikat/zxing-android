@@ -11,12 +11,17 @@ public abstract class CameraManager {
 
     public static final String TAG = CameraManager.class.getSimpleName();
 
+    /**
+     * Override the method to provide a camera instance.
+     *
+     * @return a {@link Camera} object to request images from.
+     */
     public abstract Camera getCamera();
 
     /**
-     * decode area of coordinates in terms of the preview frame.
+     * Override the method to specify a framing rect.
      *
-     * @return {@link Rect} expressing barcode scan area in terms of the preview size
+     * @return a {@link Rect} area representing barcode decode area in preview frame
      */
     public abstract Rect getFramingRectInPreview();
 
