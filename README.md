@@ -83,18 +83,7 @@ class QRCodeScanListener implements BarcodeScanListener {
         switch (result.getBarcodeFormat()) {
             case QR_CODE:
                 String text = result.getText();
-                Uri uri = Uri.parse(text);
-                Intent intent = DefaultRouter.getIntent(ZebraActivity.this, uri);
-                if (intent != null) {
-                    startActivity(intent);
-                    mBarcodeScanManager.stop();
-                } else {
-                    if (mToast != null) {
-                        mToast.cancel();
-                    }
-                    mToast = Toast.makeText(ZebraActivity.this, text, Toast.LENGTH_SHORT);
-                    mToast.show();
-                }
+                // do something with decoded text
                 break;
             case EAN_8:
             case EAN_13:
