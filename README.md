@@ -1,12 +1,13 @@
 zxing-android
--------------
+=============
 
 [![Build Status](https://travis-ci.org/kamikat/zxing-android.svg?branch=android)](https://travis-ci.org/kamikat/zxing-android)
 [![Release](https://jitpack.io/v/moe.banana/zxing-android.svg)](https://jitpack.io/#moe.banana/zxing-android)
 
 Core components to integrate zxing with Android project.
 
-### Install ###
+Install
+-------
 
 Add dependency to `build.gradle`
 
@@ -21,7 +22,8 @@ dependencies {
 }
 ```
 
-### Usage ###
+Usage
+-----
 
 To integrate QR code for example:
 
@@ -124,7 +126,8 @@ mBarcodeScanManager.setHints(
 **Finally** when camera is ready, call `mBarcodeScanManager.start()`,
 and call `mBarcodeScanManager.stop()` before stop camera preview or anytime the decoding loop should stop.
 
-### License ###
+License
+-------
 
 (Apache License 2.0)
 
