@@ -17,7 +17,6 @@ repositories {
 }
 
 dependencies {
-    compile 'com.google.zxing:core:2.3.0'
     compile 'moe.banana:zxing-android:<VERSION>'
 }
 ```
